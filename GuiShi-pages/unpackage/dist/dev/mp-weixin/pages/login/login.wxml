@@ -1,0 +1,1 @@
+<view class="main data-v-7a568672"><image src="../../static/image/logo.png" class="data-v-7a568672"></image><view class="text-lg text-gray data-v-7a568672">合理规划你的时间，提升生活效率</view><button class="cu-btn bg-gradual-blue lg data-v-7a568672" open-type="getUserInfo" data-event-opts="{{[['getuserinfo',[['getUserInfo',['$event']]]]]}}" bindgetuserinfo="__e">登录</button></view>

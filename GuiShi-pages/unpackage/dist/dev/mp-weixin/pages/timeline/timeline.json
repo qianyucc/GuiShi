@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "倒计时",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-fab": "/components/uni-fab/uni-fab"
+  }
+}

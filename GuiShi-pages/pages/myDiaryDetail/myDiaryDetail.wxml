@@ -1,9 +1,0 @@
-<view class='container'>
-  <text class="diary-info">{{diary.time}}</text>
-  <text class="diary-info">{{diary.week}}</text>
-  <text class="diary-info">{{diary.weather}}</text>
-</view>
-
-<view class="diary-content">
-  {{diary.content}}
-</view>

@@ -1,0 +1,93 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}, {
+			"path": "pages/timeline/timeline",
+			"style": {
+				"navigationBarTitleText": "倒计时",
+				"backgroundTextStyle": "dark",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/dayplan/dayplan",
+			"style": {
+				"navigationBarTitleText": "日计划",
+				"backgroundTextStyle": "dark",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mime/mime",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}, {
+			"path": "pages/timeline/add-countdown/add-countdown",
+			"style": {
+				"navigationBarTitleText": "添加倒计时"
+			}
+		}, {
+			"path": "pages/timeline/add-diary/add-diary",
+			"style": {
+				"navigationBarTitleText": "写日记"
+			}
+		}, {
+			"path": "pages/timeline/add-mail/add-mail",
+			"style": {
+				"navigationBarTitleText": "给未来写信"
+			}
+		}, {
+			"path": "pages/dayplan/add-plan/add-plan",
+			"style": {
+				"navigationBarTitleText": "添加今天的计划"
+			}
+		}, {
+			"path": "pages/mime/my-plan/my-plan",
+			"style": {
+				"navigationBarTitleText": "我的计划"
+			}
+		}, {
+			"path": "pages/mime/my-diary/my-diary",
+			"style": {
+				"navigationBarTitleText": "我的日记"
+			}
+		}, {
+			"path": "pages/mime/my-countdown/my-countdown",
+			"style": {
+				"navigationBarTitleText": "我的倒计时"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#437dff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/timeline/timeline",
+			"iconPath": "static/image/icon/hourglass.png",
+			"selectedIconPath": "static/image/icon/hourglass-click.png",
+			"text": "倒计时"
+		}, {
+			"pagePath": "pages/dayplan/dayplan",
+			"iconPath": "static/image/icon/clock.png",
+			"selectedIconPath": "static/image/icon/clock-click.png",
+			"text": "日计划"
+		}, {
+			"pagePath": "pages/mime/mime",
+			"iconPath": "static/image/icon/mime.png",
+			"selectedIconPath": "static/image/icon/mime-click.png",
+			"text": "我的"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "light",
+		"navigationBarTitleText": "规时",
+		"navigationBarBackgroundColor": "#60C0FF",
+		"backgroundColor": "#F8F8F8"
+	}
+}

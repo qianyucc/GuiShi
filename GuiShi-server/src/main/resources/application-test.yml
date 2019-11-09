@@ -1,8 +1,0 @@
-server:
-  port: 8083
-  servlet:
-    context-path: /wxapp
-  ssl:
-    key-store: classpath:www.qianyucc.xyz.jks
-    key-password: chqi0829
-    key-store-type: JKS

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/timeline/timeline",
+    "pages/dayplan/dayplan",
+    "pages/mime/mime",
+    "pages/timeline/add-countdown/add-countdown",
+    "pages/timeline/add-diary/add-diary",
+    "pages/timeline/add-mail/add-mail",
+    "pages/dayplan/add-plan/add-plan",
+    "pages/mime/my-plan/my-plan",
+    "pages/mime/my-diary/my-diary",
+    "pages/mime/my-countdown/my-countdown"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "规时",
+    "navigationBarBackgroundColor": "#60C0FF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#437dff",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/timeline/timeline",
+        "iconPath": "static/image/icon/hourglass.png",
+        "selectedIconPath": "static/image/icon/hourglass-click.png",
+        "text": "倒计时"
+      },
+      {
+        "pagePath": "pages/dayplan/dayplan",
+        "iconPath": "static/image/icon/clock.png",
+        "selectedIconPath": "static/image/icon/clock-click.png",
+        "text": "日计划"
+      },
+      {
+        "pagePath": "pages/mime/mime",
+        "iconPath": "static/image/icon/mime.png",
+        "selectedIconPath": "static/image/icon/mime-click.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

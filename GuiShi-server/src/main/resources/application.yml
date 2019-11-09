@@ -1,12 +1,48 @@
+server:
+  port: 8083
+
+weixin:
+  appid: wxeedd8807e8f9532b
+  secret: 8367d96fc039be0a9b4439aa1a5e7da1
+  grant-type: authorization_code
+
+sources:
+  images:
+    path: F:/images/
+#    path: /usr/local/app/images/
+    uri: http://localhost:8083/api/images/
+#    uri: http://118.25.208.67:8083/api/images/
+
 spring:
-  profiles:
-    active: test
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/wxapp?useUnicode=true&characterEncoding=utf-8&useSSL=true&&serverTimezone=GMT%2b8
-    username: qianyu
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./db/guishi
+    username: root
     password: 111111
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update # 无表时创建表，有表时不创建
     show-sql: true
+  mvc:
+    throw-exception-if-no-handler-found: true #出现错误时, 直接抛出异常
+  resources:
+    add-mappings: false #不要为我们工程中的资源文件建立映射
+  servlet:
+    multipart:
+      max-file-size: 50MB # 单文件上传最大大小
+      max-request-size: 100MB # 多文件上传最大大小
+
+# redis
+redis:
+  hostname: localhost
+  port: 6379
+
+# log
+logging:
+  file:
+    max-history: 15
+    max-size: 100Mb
+  level:
+    root: info
+    com.qianyucc.guishi.repository: debug
+  path: logs

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "日计划",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}
