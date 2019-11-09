@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "添加计划",
+  "navigationBarTextStyle": "white",
+"navigationBarBackgroundColor": "#FA823E",
+  "backgroundTextStyle": "light"
+}

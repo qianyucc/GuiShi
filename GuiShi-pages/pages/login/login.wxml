@@ -1,0 +1,5 @@
+<view class="whole">
+    <image src="https://www.qianyucc.xyz/wxapp/sl.png" class="head_img" />
+    <button class="btn" open-type="getUserInfo" 
+    type = "primary" bindgetuserinfo="getUserInfo">授权登录</button>
+</view>

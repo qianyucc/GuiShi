@@ -1,0 +1,41 @@
+<view bindtap='hideMenu'>
+  <block wx:if='{{send.length>0}}'>
+    <view class="container">
+
+      <view>
+        <text wx:for="{{send}}" wx:for-item="value" wx:key wx:if="{{index<4}}" class="time-point">{{value.pointtime}}</text>
+      </view>
+
+
+      <view>
+        <text wx:for="{{send}}" wx:for-item="value" wx:key wx:if="{{index<4}}" class='time-word'>{{value.event}}</text>
+      </view>
+      <view style='color:#fff;'>----------------</view>
+      <view class='time-index-{{value.color}}' bindlongpress='deleteItem' bindtap='modifyItem' data-id='{{value.id}}' data-event='{{value.event}}' data-endDate='{{value.time}}' wx:for="{{send}}" wx:for-item="value">
+        <view>
+          <text>{{value.event}}:</text>
+        </view>
+        <view>
+          <text class='time-time'> 还剩{{value.restDays}}天</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='empty-view'>
+      <image class='empty-image' src='../../image/icon/leaf.png'></image>
+      <text class='null'>还没有倒计时，快去添加一个吧！</text>
+    </view>
+  </block>
+
+  <view class="person_box">
+    <view hidden="{{selectPerson}}" style='position:fixed;'>
+      <view class="select_one" bindtap="mySelect" data-me="countdown">倒计时</view>
+      <view class="select_one" bindtap="mySelect" data-me="diary">日记</view>
+      <view class="select_one" bindtap="mySelect" data-me="mail">未来信箱</view>
+    </view>
+  </view>
+  <view>
+    <image src='/image/icon/plus.png' catchtap='clickPerson' class='plus'></image>
+  </view>
+</view>

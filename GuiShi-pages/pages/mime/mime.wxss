@@ -1,0 +1,78 @@
+/**index.wxss**/
+.user-container {
+    padding: 50rpx 0;
+     background: linear-gradient( #B8EDB3, white); 
+    
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin-left: 70rpx;
+    border: 2rpx;
+    border-radius: 10rpx;
+    border-color: grey;
+}
+
+.userinfo-text {
+    margin-left: 40rpx;
+    display: flex;
+    flex-direction: column;
+    /* 左对齐 */
+    justify-content: flex-start;
+}
+
+.userinfo-nickname {
+    font-size: 40rpx;
+}
+
+.userinfo-address {
+    margin-top: 10rpx;
+    font-size: 30rpx;
+    color: #aaa;
+}
+
+.tab-container {
+    margin-top: 30rpx;
+}
+
+.tab-item {
+    padding: 20rpx 30rpx;
+    border: 1rpx solid #e8e8e8;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tab-icon {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.tab-right {
+    /* align-self: flex-end; */
+    margin-left: 420rpx;
+    opacity: 0.5;
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.tab-item-hover {
+    background-color: #e6e6e6;
+}
+
+.tab-text {
+    display: inline-block;
+    line-height: 40rpx;
+    font-size: 40rpx;
+    margin-left: 20rpx;
+    color: #1e1e1e;
+}

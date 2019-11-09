@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "ec-canvas": "../ec-canvas/ec-canvas"
+    },
+    "navigationBarBackgroundColor": "#489B81",
+    "navigationBarTitleText": "我的计划",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light"
+}

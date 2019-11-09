@@ -1,0 +1,43 @@
+<!--pages/list/list.wxml-->
+
+<view>
+  <swiper indicator-dots indicator-color='#a4a3a0' autoplay='true' interval='5000' duration='1000' circular='true'>
+    <swiper-item>
+      <image src='https://www.qianyucc.xyz/wxapp/gundong1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://www.qianyucc.xyz/wxapp/gundong2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://www.qianyucc.xyz/wxapp/gundong3.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='tmpContainer'>
+  <block wx:if='{{planList.length>0}}'>
+    <scroll-view scroll-y>
+      <block wx:for="{{planList}}" wx:for-item="plan">
+        <view class='content' data-id="{{plan.id}}" data-content="{{plan.content}}" data-startTime="{{plan.startTime}}" data-endTime="{{plan.endTime}}" bindlongpress="deleteItem" catchtap='modifyItem'>
+          <image class='image-icon' src="https://www.qianyucc.xyz/wxapp/tb1.png"></image>
+          <text class='inContent'>{{plan.content}}</text>
+          <text class='time'>时间：{{plan.startTime}}~{{plan.endTime}}</text>
+          <block wx:if="{{plan.status==-1}}">
+            <image class='delect' data-id="{{plan.id}}" src='https://www.qianyucc.xyz/wxapp/wrong.png' catchtap='changeToRight'></image>
+          </block>
+          <block wx:elif="{{plan.status==0}}">
+            <image class='delect' data-id="{{plan.id}}" src='https://www.qianyucc.xyz/wxapp/loading.png' catchtap='changeToComplete'></image>
+          </block>
+          <block wx:else>
+            <image class='delect' data-id="{{plan.id}}" src='https://www.qianyucc.xyz/wxapp/right.png' catchtap='changeToLoading'></image>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+  </block>
+  <block wx:else>
+    <view style='padding-top:70rpx;text-align:center;color:grey;'>
+      <text>快去添加今天的第一个计划吧！</text>
+    </view>
+  </block>
+  <button class="submit" bindtap='add'>添加计划</button>
+</view>

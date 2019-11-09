@@ -1,0 +1,9 @@
+<view class='letter-container'>
+  <view class='letter-title'>{{letter.title}}</view>
+  <text class='letter-content'>{{letter.content}}</text>
+  <view class='bottom-container'>
+    <view class='samll-text'>创建时间：{{letter.createtime}}</view>
+    <view class='samll-text'>通知邮箱：{{letter.mail}}</view>
+    <view class='samll-text'>通知时间：{{letter.noticetime}}</view>
+  </view>
+</view>

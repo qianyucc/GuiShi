@@ -1,0 +1,29 @@
+<view class='plan-container'>
+  <block wx:if="{{dateList.length > 0}}">
+    <view class='chart-box'>
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ec}}"></ec-canvas>
+    </view>
+    <view class='item-container'>
+      <block wx:for="{{dateList}}" wx:for-item="date">
+        <view class='plan-item'>
+          {{date}}
+          <view wx:for="{{planList[date]}}" wx:for-item="plan">
+            <block wx:if="{{plan.status==1}}">
+              <text class='plan-text'>{{plan.content}} {{plan.startTime}}-{{plan.endTime}}</text><text class='plan-text,green-color'>    已完成</text>
+            </block>
+            <block wx:else>
+              <text class='plan-text'>{{plan.content}} {{plan.startTime}}-{{plan.endTime}}</text><text class='plan-text,red-color'>    未完成</text>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <image class="empty-image" mode="scaleToFill" src="../../image/icon/empty.png"></image>
+    <view>没有任何计划哦~</view>
+  </block>
+
+
+
+</view>

@@ -1,0 +1,36 @@
+.container {
+  flex-direction: row;
+
+  background: linear-gradient(#489B81, white); 
+}
+
+
+.weather {
+  text-align: center;
+  padding: 30rpx;
+  color: #000;
+  font-size: 30rpx;
+}
+
+.submit {
+  background-color: rgb(99, 168, 146);
+  width: 90%;
+  color: white;
+}
+
+.section {
+  margin-left: 70rpx;
+  padding: 20rpx;
+  top: 150px;
+  width: 550rpx;
+  height: 700rpx;
+  line-height: 20rpx;
+  color: rgba(136, 136, 136, 1);
+  font-size: 30rpx;
+  text-align: left;
+  border: 2rpx solid rgba(187, 187, 187, 1);
+}
+textarea{
+  width:100%;
+  height:100%;
+}

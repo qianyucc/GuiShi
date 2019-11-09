@@ -1,0 +1,18 @@
+<view class='container'>
+<form bindsubmit="formSubmit" >
+<view class="workname">
+
+<text>事件名称: </text>
+    <input   value="{{ input }}" name="input" bindchange='setevent' placeholder="  例如：六级考试..." />
+  </view>
+<view class="workname">
+  <picker mode="date" name="data" value="{{enddate}}" start="2019-01-01" end="2030-09-01" bindchange="bindDateChange">
+  <text>截止日期:</text>
+  <text style='padding:80rpx;color:gray;padding-left:20rpx;'> {{enddate}}</text>
+  </picker>
+</view>
+ <view  style='padding:50rpx;'>
+    <button form-type="submit" class="submit">完成</button>
+  </view>
+</form>
+</view>

@@ -1,0 +1,46 @@
+.chart-box {
+  border: 2rpx solid black;
+  background: white;
+  width: 90%;
+  height: 500rpx;
+  margin: auto;
+  margin-top: 25rpx;
+}
+
+.plan-container {
+  padding: 25rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-item {
+  border: 1rpx solid black;
+  margin: 10rpx;
+  padding: 20rpx;
+  font-size: 37rpx;
+  border-radius: 20rpx;
+  width:100%;
+}
+
+.plan-text {
+  font-size: 32rpx;
+  margin: 5rpx;
+}
+
+.empty-image {
+  padding: 40rpx;
+  width:60%;
+}
+.green-color{
+  color: green;
+}
+.red-color{
+  color: red;
+}

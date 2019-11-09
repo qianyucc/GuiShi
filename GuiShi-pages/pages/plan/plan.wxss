@@ -1,0 +1,79 @@
+/* pages/list/list.wxss */
+.submit{
+  background-color: #FF9933;
+  margin-bottom: 30rpx;
+}
+.center {
+  margin-left: 45rpx;
+  margin-right: 45rpx;
+}
+
+swiper {
+  left: 40rpx;
+  width: 818rpx;
+  height: 400rpx;
+  top: 180rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 660rpx;
+  height: 94rpx;
+  background: #8ed145;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 10rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+.tmpContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  
+  margin-left: 22px;
+  margin-top: 40rpx;
+  /* margin-bottom:20rpx; */
+}
+
+.image-icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.content {
+  padding: 20rpx;
+  border: 1px solid #bbb;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 10rpx;
+}
+
+.inContent {
+  font-size: 30rpx;
+}
+
+.time {
+  font-size: 25rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+
+.delect {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline;
+}
+
+scroll-view {
+  height: 520rpx;
+  width: 95%;
+}
